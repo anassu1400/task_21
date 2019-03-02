@@ -30,7 +30,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('restaurants/list/',views.restaurant_list ,name='restaurant-list'),
+    path('',views.restaurant_list ,name='restaurant-list'),
     path('restaurants/favorite/',views.favorite_restaurants ,name='favorite-restaurant'),
     path('restaurants/<int:restaurant_id>/detail/',views.restaurant_detail ,name='restaurant-detail'),
     path('restaurants/create/',views.restaurant_create ,name='restaurant-create'),
